@@ -40,7 +40,7 @@ const About = () => {
         >
           {[
             { number: '3+ Months', text: 'of Experience' },
-            { number: '50+', text: 'Projects Completed' },
+            { number: '15+', text: 'Projects Completed' },
             { number: '4', text: 'Platforms Mastered' },
             { number: '100%', text: 'Client Satisfaction' },
           ].map((stat, index) => (
