@@ -52,7 +52,7 @@ const Hero = () => {
         >
           <div className="relative z-20 w-72 h-72 md:w-96 md:h-96 rounded-full bg-tertiary/20 p-3">
             <img
-              src="/image_9238.png"
+              src="/assets/image_9238.png"
               alt="Varun Ambulgekar"
               className="w-full h-full object-cover rounded-full"
             />
