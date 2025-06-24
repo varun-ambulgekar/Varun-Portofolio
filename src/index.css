@@ -9,7 +9,7 @@
   }
   
   body {
-    @apply bg-light text-primary;
+    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
   }
 }
 
@@ -23,7 +23,7 @@
   }
   
   .subheading {
-    @apply font-poppins font-semibold text-xl md:text-2xl text-secondary mb-4;
+    @apply font-poppins font-semibold text-xl md:text-2xl text-secondary-light dark:text-secondary-dark mb-4;
   }
   
   .card {
@@ -35,10 +35,10 @@
   }
   
   .btn-primary {
-    @apply btn bg-primary text-light hover:bg-secondary;
+    @apply btn bg-primary-light dark:bg-primary-dark text-background-light dark:text-background-dark hover:bg-secondary-light dark:hover:bg-secondary-dark;
   }
   
   .btn-outline {
-    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-light;
+    @apply btn border-2 border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark hover:bg-primary-light dark:hover:bg-primary-dark hover:text-background-light dark:hover:text-background-dark;
   }
 }

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import ResumeButton from './ResumeButton'
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
               <p className="text-primary/80 font-medium">Projects Completed</p>
             </div>
             <div className="p-4 bg-white/50 rounded-lg shadow-sm hover:shadow-md transition-all">
-              <h3 className="text-3xl font-bold text-secondary mb-1">3+ Months</h3>
+              <h3 className="text-3xl font-bold text-secondary mb-1">4+ Months</h3>
               <p className="text-primary/80 font-medium">of Experience</p>
             </div>
           </div>
@@ -41,6 +42,7 @@ const Hero = () => {
             <a href="#projects" className="btn-outline hover:scale-105 transition-transform">
               View Projects
             </a>
+            <ResumeButton />
           </div>
         </motion.div>
 
@@ -51,11 +53,23 @@ const Hero = () => {
           className="relative flex items-center justify-center h-[28rem] md:h-[32rem]"
         >
           <div className="relative z-20 w-72 h-72 md:w-96 md:h-96 rounded-full bg-tertiary/20 p-3">
-            <img
-              src="/assets/image_9238.png"
-              alt="Varun Ambulgekar"
-              className="w-full h-full object-cover rounded-full"
-            />
+            <div className="w-full h-full rounded-full bg-white/50 flex items-center justify-center overflow-hidden">
+              <img
+                src="/assets/image_9238.png"
+                alt="Varun Ambulgekar"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  console.error('Image failed to load:', e);
+                  e.target.parentElement.innerHTML = `<div class="flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-tertiary/20 to-secondary/20">
+                    <svg className="w-20 h-20 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    <span class="mt-2 text-gray-500">Profile Photo</span>
+                  </div>`;
+                }}
+                loading="eager"
+              />
+            </div>
           </div>
           {/* Adjust the circle position by modifying the top and left percentages, and transform values */}
           <motion.div

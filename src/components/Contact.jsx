@@ -36,7 +36,7 @@ const Contact = () => {
           className="text-center"
         >
           <h2 className="heading">Get in Touch</h2>
-          <p className="text-lg md:text-xl text-primary/80 max-w-3xl mx-auto mb-12">
+          <p className="text-lg md:text-xl text-primary/80 dark:text-text-dark max-w-3xl mx-auto mb-12">
             I'm always open to new opportunities and collaborations. Feel free to reach out!
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="card"
+            className="card bg-white dark:bg-gray-800"
           >
             <form className="space-y-6" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="6dd0d60c-9181-4d9a-b948-ff4f73c75df8" />
@@ -55,7 +55,7 @@ const Contact = () => {
               <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-primary font-medium mb-2">
+                  <label htmlFor="name" className="block text-gray-800 dark:text-white font-medium mb-2">
                     Name
                   </label>
                   <input
@@ -67,7 +67,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-primary font-medium mb-2">
+                  <label htmlFor="email" className="block text-gray-800 dark:text-white font-medium mb-2">
                     Email
                   </label>
                   <input
@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <label htmlFor="message" className="block text-primary font-medium mb-2">
+                <label htmlFor="message" className="block text-gray-800 dark:text-white font-medium mb-2">
                   Message
                 </label>
                 <textarea
@@ -113,7 +113,7 @@ const Contact = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:text-secondary transition-colors"
+                className="text-gray-800 dark:text-white hover:text-secondary transition-colors"
                 title={link.name}
               >
                 {link.icon}

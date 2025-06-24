@@ -29,7 +29,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="section-padding bg-white">
+    <section id="projects" className="section-padding bg-background-light dark:bg-background-dark transition-colors duration-300">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,8 +38,8 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="heading">Featured Projects</h2>
-          <p className="text-lg md:text-xl text-primary/80 max-w-3xl mx-auto mb-12">
+          <h2 className="heading text-text-light dark:text-text-dark">Featured Projects</h2>
+          <p className="text-lg md:text-xl text-text-light/80 dark:text-text-dark/80 max-w-3xl mx-auto mb-12">
             Here are some of my notable projects that demonstrate my expertise
             across different mobile development platforms.
           </p>
@@ -53,25 +53,25 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card group hover:bg-primary hover:scale-105 cursor-pointer"
+              className="card bg-background-light dark:bg-background-dark group hover:bg-primary-light dark:hover:bg-primary-dark hover:scale-105 cursor-pointer border border-text-light/10 dark:border-text-dark/10"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-bold text-primary group-hover:text-light">
+                  <h3 className="text-xl font-bold text-text-light dark:text-text-dark group-hover:text-text-dark">
                     {project.title}
                   </h3>
-                  <span className="px-3 py-1 text-sm rounded-full bg-tertiary/20 text-secondary group-hover:bg-light/10 group-hover:text-light">
+                  <span className="px-3 py-1 text-sm rounded-full bg-secondary-light/20 text-secondary-light dark:text-secondary-dark group-hover:bg-text-dark/10 group-hover:text-text-dark">
                     {project.type}
                   </span>
                 </div>
-                <p className="text-primary/80 group-hover:text-light/80">
+                <p className="text-text-light/80 dark:text-text-dark/80 group-hover:text-text-dark/80">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm rounded-full bg-secondary/10 text-secondary group-hover:bg-light/10 group-hover:text-light"
+                      className="px-3 py-1 text-sm rounded-full bg-secondary-light/10 text-secondary-light dark:text-secondary-dark group-hover:bg-text-dark/10 group-hover:text-text-dark"
                     >
                       {tech}
                     </span>

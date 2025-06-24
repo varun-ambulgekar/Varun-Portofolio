@@ -51,7 +51,7 @@ const Skills = () => {
           className="text-center"
         >
           <h2 className="heading">Skills & Expertise</h2>
-          <p className="text-lg md:text-xl text-primary/80 max-w-3xl mx-auto mb-12">
+          <p className="text-lg md:text-xl text-primary/80 dark:text-text-dark max-w-3xl mx-auto mb-12">
             With expertise across multiple platforms and frameworks, I bring a comprehensive
             skill set to mobile app development.
           </p>
@@ -65,15 +65,15 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card transform hover:scale-105 hover:shadow-lg transition-all duration-300"
+              className="card bg-white dark:bg-gray-800 transform hover:scale-105 hover:shadow-lg transition-all duration-300"
             >
               <h3 className="subheading">{skillGroup.category}</h3>
               <div className="space-y-4">
                 {skillGroup.items.map((skill, skillIndex) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium text-primary">{skill.name}</span>
-                      <span className="text-secondary">{skill.level}%</span>
+                      <span className="font-medium text-gray-800 dark:text-white">{skill.name}</span>
+                      <span className="text-gray-800 dark:text-white">{skill.level}%</span>
                     </div>
                     <div className="h-2 bg-tertiary/30 rounded-full overflow-hidden">
                       <motion.div
