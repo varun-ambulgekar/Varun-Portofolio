@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="relative z-20 w-72 h-72 md:w-96 md:h-96 rounded-full bg-tertiary/20 p-3">
             <div className="w-full h-full rounded-full bg-white/50 flex items-center justify-center overflow-hidden">
               <img
-                src="/assets/image_9238.png"
+                src="/assets/IMG_9238.jpg"
                 alt="Varun Ambulgekar"
                 className="w-full h-full object-cover"
                 onError={(e) => {
