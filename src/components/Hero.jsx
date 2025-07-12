@@ -30,7 +30,7 @@ const Hero = () => {
               <p className="text-primary/80 font-medium">Projects Completed</p>
             </div>
             <div className="p-4 bg-white/50 rounded-lg shadow-sm hover:shadow-md transition-all">
-              <h3 className="text-3xl font-bold text-secondary mb-1">4+ Months</h3>
+              <h3 className="text-3xl font-bold text-secondary mb-1">6+ Months</h3>
               <p className="text-primary/80 font-medium">of Experience</p>
             </div>
           </div>
