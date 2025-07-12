@@ -57,7 +57,7 @@ const About = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
         >
           {[
-            { number: '4+ Months', text: 'of Experience' },
+            { number: '6+ Months', text: 'of Experience' },
             { number: '15+', text: 'Projects Completed' },
             { number: '4', text: 'Platforms Mastered' },
             { number: '100%', text: 'Client Satisfaction' },
